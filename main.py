@@ -225,3 +225,10 @@ print(result2)
 # python里的lambda函数“ ：”后只能有一个语句，这点与C++不同
 result3 = apply(lambda num1, num2: num1 / num2, 34, 2)
 print(result3)
+
+#解包操作
+persons_list = [{'name': 'John', 'age': 30}, {'name': 'Alice', 'age': 25}]
+
+for person in persons_list:
+    name, age = person.items()
+    print(f"Name: {name[1]}, Age: {age[1]}")
